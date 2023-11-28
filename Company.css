@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #fbfbfb;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.links {
+    text-align: right;
+    padding: 10px;
+    color: blue;
+}
+
+.links a {
+    text-decoration: none;
+    color: blue;
+    margin: 0 10px;
+}
+
+.logo-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    margin-left: -3cm;
+  
+} .logo-2 {
+    width: 1200px;
+    height: 200px;
+}
+
+.action-icons {
+    text-align: center;
+    margin-top: 20px;
+    color: #f2f2f2;
+}
+
+.action-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+.Bag-icon, .Add {
+    margin-right: -1300px;
+    margin-top: -100px;
+    margin-bottom: -60px;
+}
+.Add {
+    margin-right: -1400px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.content-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.inline-button {
+    display: inline-block;
+    margin: 4.0px 20px 20px 20px; /* Add 20px right margin and 20px bottom margin */
+}
+
+.inline-button img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.inline-button button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #0612fb;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+

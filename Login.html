@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        .logo {
+            width: 250px;
+            height: 250px;
+            margin: 0 auto; /* Center the logo */
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .error-message {
+            color: red;
+            margin-top: 10px;
+        }
+
+        .forgot-password, .terms-condition {
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <form id="loginForm" onsubmit="return validateForm()">
+            <input type="email" id="email" name="email" placeholder="Email Address" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <a href="#" onclick="validateForm()"> <!-- Removed unnecessary link -->
+                <button type="button">Log In</button>
+            </a>
+        </form>
+        <p id="error-message" class="error-message"></p>
+        <a href="#" class="forgot-password">Forgot Password?</a>
+        <a href="#" class="terms-condition">Terms and Conditions</a>
+    </div>
+
+    <script>
+        function validateForm() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var errorMessage = document.getElementById("error-message");
+
+            // Check if email and password match the provided credentials
+            if (email === "shopis@gmail.com" && password === "shopis") {
+                errorMessage.innerText = ""; // Clear any previous error messages
+                window.location.href = 'index.html'; // Redirect to home page
+            } else if (email === "shopis@gmail.com") {
+                errorMessage.innerText = "Your password is incorrect.";
+            } else if (password === "shopis") {
+                errorMessage.innerText = "Your email address is incorrect.";
+            } else {
+                errorMessage.innerText = "Your email and password are incorrect.";
+            }
+        }
+    </script>
+</body>
+</html>
